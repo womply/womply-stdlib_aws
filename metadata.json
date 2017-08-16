@@ -4,37 +4,13 @@
   "author": "womply",
   "summary": "AWS management helper functions.",
   "license": "Apache-2.0",
-  "source": "",
+  "source": "https://github.com/womply/womply-stdlib_aws.git",
+  "issues_url": "https://github.com/womply/womply-stdlib_aws/issues",
+  "project_page": "https://github.com/womply/womply-stdlib_aws",
   "dependencies": [
     {
       "name": "puppetlabs-stdlib",
       "version_requirement": ">= 4.13.1 < 5.0.0"
-    }
-  ],
-  "operatingsystem_support": [
-    {
-      "operatingsystem": "Debian",
-      "operatingsystemrelease": [
-        "8"
-      ]
-    },
-    {
-      "operatingsystem": "RedHat",
-      "operatingsystemrelease": [
-        "7.0"
-      ]
-    },
-    {
-      "operatingsystem": "Ubuntu",
-      "operatingsystemrelease": [
-        "16.04"
-      ]
-    },
-    {
-      "operatingsystem": "windows",
-      "operatingsystemrelease": [
-        "2012 R2"
-      ]
     }
   ],
   "requirements": [
