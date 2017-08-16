@@ -124,4 +124,8 @@ extra_gemfiles.each do |gemfile|
     eval(File.read(gemfile), binding)
   end
 end
+
+# Author-added Gems
+gem 'aws-sdk-core'
+gem 'retries'
 # vim: syntax=ruby
