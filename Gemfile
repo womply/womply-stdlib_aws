@@ -127,5 +127,6 @@ end
 
 # Author-added Gems
 gem 'aws-sdk-core'
+gem 'CFPropertyList'
 gem 'retries'
 # vim: syntax=ruby
