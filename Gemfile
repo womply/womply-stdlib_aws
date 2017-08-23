@@ -128,7 +128,7 @@ extra_gemfiles.each do |gemfile|
 end
 
 # Author-added Gems
-gem 'aws-sdk-core'
+gem 'aws-sdk'
 gem 'CFPropertyList'
 gem 'retries'
 # vim: syntax=ruby

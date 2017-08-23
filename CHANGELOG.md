@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+
+## Release 0.2.1
+
+**Bugfixes**
+  * Replaced entry in gemfile for `aws-sdk-core` with correct gem, `aws-sdk`.
+
+
 ## Release 0.2.0
 
 **Features**
