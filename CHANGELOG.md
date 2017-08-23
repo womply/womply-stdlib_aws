@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## Release 0.2.0
+
+**Features**
+  * `stdlib_aws::subnet_id_to_cidr` function. Retrieves a CIDR-notation address for a given AWS Subnet ID.
+
 ## Release 0.0.2
 
 **Features**
