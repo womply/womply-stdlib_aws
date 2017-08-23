@@ -1,6 +1,6 @@
 {
   "name": "womply-stdlib_aws",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "womply",
   "summary": "AWS management helper functions.",
   "license": "Apache-2.0",

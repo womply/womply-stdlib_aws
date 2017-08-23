@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## Release 0.0.2
+
+**Features**
+  * Published to forge!
+  * Version bump for published release!
+
 ## Release 0.0.1
 
 **Features**
