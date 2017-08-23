@@ -15,31 +15,24 @@
 
 ## Description
 
-Start with a one- or two-sentence summary of what the module does and/or what problem it solves. This is your 30-second elevator pitch for your module. Consider including OS/Puppet version it works with.       
+`stdlib_aws` is a helper module containing (eventually) various Puppet extensions to assist with managing resources on AWS.
 
-You can give more descriptive information in a second paragraph. This paragraph should answer the questions: "What does this module *do*?" and "Why would I use it?" If your module has a range of functionality (installation, configuration, management, etc.), this is the time to mention it.
+For now, the only think it contains is the function `stdlib_aws::subnets_from_tag`, which takes a tag, optionally a tag value, and optionally a region (uses default region otherwise), and returns a list of subnet IDs for all AWS subnets tagged as described.
 
 ## Setup
 
-### What stdlib_aws affects **OPTIONAL**
+### Setup Requirements
 
-If it's obvious what your module touches, you can skip this section. For example, folks can probably figure out that your mysql_instance module affects their MySQL instances.
+1. Install AWS Ruby SDK into Puppet's Ruby on the master if it's not already present.
+    * `/opt/puppetlabs/puppet/bin/gem install aws-sdk`
+2. Configure credentials for the gem in one of the usual ways.
+    * See: https://docs.aws.amazon.com/sdk-for-ruby/v2/developer-guide/setup-config.html
 
-If there's more that they should know about, though, this is the place to mention:
+### Beginning with stdlib_aws
 
-* Files, packages, services, or operations that the module will alter, impact, or execute.
-* Dependencies that your module automatically installs.
-* Warnings or other important notices.
+Use the functions! :D
 
-### Setup Requirements **OPTIONAL**
-
-If your module requires anything extra before setting up (pluginsync enabled, another module, etc.), mention it here. 
-  
-If your most recent release breaks compatibility or requires particular steps for upgrading, you might want to include an additional "Upgrading" section here.
-
-### Beginning with stdlib_aws  
-
-The very basic steps needed for a user to get the module up and running. This can include setup steps, if necessary, or it can be an example of the most basic use of the module.
+There exists currently inline docs for use with `puppet strings`. The best way to render and display these is tbd.
 
 ## Usage
 
@@ -47,25 +40,20 @@ This section is where you describe how to customize, configure, and do the fancy
 
 ## Reference
 
-Users need a complete list of your module's classes, types, defined types providers, facts, and functions, along with the parameters for each. You can provide this list either via Puppet Strings code comments or as a complete list in the README Reference section.
-
-* If you are using Puppet Strings code comments, this Reference section should include Strings information so that your users know how to access your documentation.
-
-* If you are not using Puppet Strings, include a list of all of your classes, defined types, and so on, along with their parameters. Each element in this listing should include:
-
-  * The data type, if applicable.
-  * A description of what the element does.
-  * Valid values, if the data type doesn't make it obvious.
-  * Default value, if any.
+1. `git clone https://github.com/womply/womply-stdlib_aws.git`
+2. `cd womply-stdlib_aws`
+3. `bundle install`
+4. `puppet strings generate lib/puppet/functions`
+5. Open `index.html` in the `docs/` subdirectory.
 
 ## Limitations
 
-This is where you list OS compatibility, version compatibility, etc. If there are Known Issues, you might want to include them under their own heading here.
+None known.
 
 ## Development
 
-Since your module is awesome, other users will want to play with it. Let them know what the ground rules for contributing are.
+For now, just fork and make a PR!
 
 ## Release Notes/Contributors/Etc. **Optional**
 
-If you aren't using changelog, put your release notes here (though you should consider using changelog). You can also add any additional sections you feel are necessary or important to include here. Please use the `## ` header. 
+  * [pizzaops](https://github.com/pizzaops)

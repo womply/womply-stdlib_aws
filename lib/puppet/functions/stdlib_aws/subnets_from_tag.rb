@@ -1,6 +1,6 @@
-# Returns a list of AWS subnets by Subnet ID for the given tag and optionally the tag's value, and/or filtered by region.
 require 'aws-sdk-core'
 require 'retries'
+# Returns a list of AWS subnets by Subnet ID for the given tag and optionally the tag's value, and/or filtered by region.
 Puppet::Functions.create_function(:'stdlib_aws::subnets_from_tag') do
   # Returns a list of subnet IDs with the given tag.
   # @param tag The tag name.
@@ -68,3 +68,4 @@ Puppet::Functions.create_function(:'stdlib_aws::subnets_from_tag') do
     subnets.map { |subnet| subnet.subnet_id }
   end
 end
+
