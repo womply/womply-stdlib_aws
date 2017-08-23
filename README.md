@@ -32,13 +32,14 @@ For now, the only think it contains is the function `stdlib_aws::subnets_from_ta
 
 Use the functions! :D
 
-There exists currently inline docs for use with `puppet strings`. The best way to render and display these is tbd.
 
 ## Usage
 
 This section is where you describe how to customize, configure, and do the fancy stuff with your module here. It's especially helpful if you include usage examples and code samples for doing things with your module.
 
 ## Reference
+
+[![puppetmodule.info docs](http://www.puppetmodule.info/images/badge.png)](http://www.puppetmodule.info/m/womply-stdlib_aws)
 
 1. `git clone https://github.com/womply/womply-stdlib_aws.git`
 2. `cd womply-stdlib_aws`
