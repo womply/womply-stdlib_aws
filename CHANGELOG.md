@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## Release 0.3.0
+
+**Features**
+  * Added type Stdlib_aws::S3bucket to validate S3 bucket names.
+    * https://docs.aws.amazon.com/AmazonS3/latest/dev/BucketRestrictions.html
+  * Added stdlib_aws::s3_bucket_to_arn function.
+    * Uses Stdlib_aws::S3bucket type to validate bucket names.
 
 ## Release 0.2.1
 
