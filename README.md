@@ -15,7 +15,7 @@
 
 ## Description
 
-`stdlib_aws` is a helper module containing (eventually) various Puppet extensions to assist with managing resources on AWS.
+`stdlib_aws` is a helper module containing various Puppet extensions to assist with managing resources on AWS.
 
 For now, the only think it contains is the function `stdlib_aws::subnets_from_tag`, which takes a tag, optionally a tag value, and optionally a region (uses default region otherwise), and returns a list of subnet IDs for all AWS subnets tagged as described.
 
@@ -39,8 +39,13 @@ This section is where you describe how to customize, configure, and do the fancy
 
 ## Reference
 
+### Viewing Docs
 [![puppetmodule.info docs](http://www.puppetmodule.info/images/badge.png)](http://www.puppetmodule.info/m/womply-stdlib_aws)
 
+
+
+**NB:** puppetmodule.info is updated hourly, so please be patient after a new release!
+### Building Docs
 1. `git clone https://github.com/womply/womply-stdlib_aws.git`
 2. `cd womply-stdlib_aws`
 3. `bundle install`
@@ -54,6 +59,11 @@ None known.
 ## Development
 
 For now, just fork and make a PR!
+
+### Guidelines
+
+  * Functions should be in-DSL rather than with Ruby when possible. If you're not sure which to use...ask!
+    * https://docs.puppet.com/puppet/latest/lang_write_functions_in_puppet.html
 
 ## Release Notes/Contributors/Etc. **Optional**
 
