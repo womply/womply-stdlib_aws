@@ -19,6 +19,40 @@
       "version_requirement": ">= 4.7.0 < 6.0.0"
     }
   ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "RedHat",
+      "operatingsystemrelease": [
+        "5",
+        "6",
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "CentOS",
+      "operatingsystemrelease": [
+        "5",
+        "6",
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "Debian",
+      "operatingsystemrelease": [
+        "6",
+        "7",
+        "8"
+      ]
+    },
+    {
+      "operatingsystem": "windows",
+      "operatingsystemrelease": [
+        "2008R2",
+        "2012",
+        "2012R2"
+      ]
+    }
+  ],
   "pdk-version": "1.0.0",
   "template-url": "file:///opt/puppetlabs/pdk/share/cache/pdk-module-template.git",
   "template-ref": "heads/master-0-g5db7961"
