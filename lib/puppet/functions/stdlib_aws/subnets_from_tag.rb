@@ -53,7 +53,7 @@ Puppet::Functions.create_function(:'stdlib_aws::subnets_from_tag') do
     client = ec2_client(region)
 
     tagname = tagpair.keys.first
-    tagvalue = tagpair[key]
+    tagvalue = tagpair[tagname]
 
     tag_filter = {
       filters: [
