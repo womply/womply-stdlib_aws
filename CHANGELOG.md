@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## Release 0.3.1
+
+**Bugfixes**
+  * Fixed typo in subnets_from_tag codebase that causes failures when specifying a key and value for a tag.
+
 ## Release 0.3.0
 
 **Features**
